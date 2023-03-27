@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3968122069559338948}
   - component: {fileID: 3279580196847374975}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2731465206210111506}
-  m_LocalRotation: {x: 0.000000021855694, y: -0.00000008742278, z: 1.9106855e-15, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -119,7 +119,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 522f4a9b810af2f4781632f4a5e0e2de, type: 2}
+  - {fileID: 2100000, guid: 61530f786dd00d548bfdbeb59432d454, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -202,7 +202,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5e542aaf4a48c7e4e96366c309861548, type: 2}
+  - {fileID: 2100000, guid: a7c00e95b871aeb458381466fa9f6765, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -285,7 +285,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 522f4a9b810af2f4781632f4a5e0e2de, type: 2}
+  - {fileID: 2100000, guid: 5e542aaf4a48c7e4e96366c309861548, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -368,7 +368,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5e542aaf4a48c7e4e96366c309861548, type: 2}
+  - {fileID: 2100000, guid: 008e709a0638b8742aec73a9904e6855, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -401,7 +401,7 @@ GameObject:
   - component: {fileID: 8902264360263764411}
   - component: {fileID: 8862220729152424077}
   m_Layer: 0
-  m_Name: GameObject (2)
+  m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -502,7 +502,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1f8dbf3310447f440a688815c0482ba4, type: 2}
+  - {fileID: 2100000, guid: 522f4a9b810af2f4781632f4a5e0e2de, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -535,6 +535,7 @@ GameObject:
   - component: {fileID: 5695170367622472622}
   - component: {fileID: 1417415124929095407}
   - component: {fileID: 4763039227930552123}
+  - component: {fileID: 1715963885}
   m_Layer: 0
   m_Name: cabinet_door_02
   m_TagString: Untagged
@@ -585,7 +586,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1f8dbf3310447f440a688815c0482ba4, type: 2}
+  - {fileID: 2100000, guid: a7407d2dd951a9e4f9b02ceed072d72f, type: 2}
   - {fileID: 2100000, guid: 682fc69ef09768547b641eea5c084e01, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -608,6 +609,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1715963885
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7984772343332819177}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.42051584, y: 0.9209691, z: 0.03327895}
+  m_Center: {x: 0.20537826, y: 0.000000029802322, z: 0.0013501504}
 --- !u!1 &8176682599046558721
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,6 +633,7 @@ GameObject:
   - component: {fileID: 9149454162192696347}
   - component: {fileID: 1860572310092188768}
   - component: {fileID: 214976426076013132}
+  - component: {fileID: 377670060}
   m_Layer: 0
   m_Name: cabinet_door_01
   m_TagString: Untagged
@@ -669,7 +684,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1f8dbf3310447f440a688815c0482ba4, type: 2}
+  - {fileID: 2100000, guid: a7407d2dd951a9e4f9b02ceed072d72f, type: 2}
   - {fileID: 2100000, guid: 682fc69ef09768547b641eea5c084e01, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -692,6 +707,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &377670060
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8176682599046558721}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.40590346, y: 0.9209688, z: 0.033278674}
+  m_Center: {x: -0.19787925, y: 0.000000074505806, z: 0.0013549807}
 --- !u!1 &8722346395746314750
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,7 +733,7 @@ GameObject:
   - component: {fileID: 9204720312451952252}
   - component: {fileID: 3676770762427658138}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: PlayerDetector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -774,7 +802,7 @@ MonoBehaviour:
   _isLightSwitch: 0
   _isDoorActivator: 1
   _isTeleporter: 0
-  _door: {fileID: 0}
+  _door: {fileID: 8862220729152424077}
   _lights: []
   _teleportationTarget: {fileID: 0}
   _initialLightIntensities: []
