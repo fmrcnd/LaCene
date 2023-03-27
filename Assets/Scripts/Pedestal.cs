@@ -8,6 +8,7 @@ public class Pedestal : MonoBehaviour
     [SerializeField] private Renderer _renderer;
     [SerializeField] private Color _originColor, _validatedColor;
     [SerializeField] private GameObject _activator;
+    [SerializeField] private bool _deactivateActivator = false;
     [Header("Optionnal : ")]
     [SerializeField] private PedestalsManager _pedestalsManager;
     [Header("Check the box if you want to\nswitch active state of the objects\nof the others list\nNB : active, the object appears/inactive, the object desappears")]
@@ -41,7 +42,7 @@ public class Pedestal : MonoBehaviour
     {
         _isValidated = isValidated;
         _renderer.material.color = isValidated ? _validatedColor : _originColor;
-
+        _activator.SetActive(!_deactivateActivator);
         if (_hasToActivateOthers && _others.Count > 0)
         {
             foreach (GameObject otherGO in _others)
