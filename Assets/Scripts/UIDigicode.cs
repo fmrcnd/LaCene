@@ -28,7 +28,7 @@ public class UIDigicode : MonoBehaviour
     private List<GameObject> _inputButtons = new List<GameObject>();
     private bool _isValid = false;
     public bool IsValid { get { return _isValid; } }
-
+    public GameObject popup;
     // Start is called before the first frame update
     void Start()
     {
@@ -75,6 +75,8 @@ public class UIDigicode : MonoBehaviour
             }
             _outputText.GetComponentInParent<Image>().color = Color.green;
             _isValid = true;
+            popup.SetActive(true);
+            gameObject.SetActive(false);
         }
         else
         {
