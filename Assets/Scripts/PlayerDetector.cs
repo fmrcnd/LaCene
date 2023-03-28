@@ -6,8 +6,9 @@ using UnityEngine;
 
 public class PlayerDetector : MonoBehaviour
 {
-    [SerializeField] private bool _isLightSwitch = false, _isDoorActivator = false, _isTeleporter = false;
+    [SerializeField] private bool _isLightSwitch = false, _isActivator = false, _isDoorActivator = false, _isTeleporter = false;
     [SerializeField] private Door _door;
+    [SerializeField] private List<GameObject> _others;
     [SerializeField] private List<Light> _lights;
     [SerializeField] private Transform _teleportationTarget;
     [SerializeField] private List<float> _initialLightIntensities;
@@ -34,6 +35,7 @@ public class PlayerDetector : MonoBehaviour
         else
         {
             print("player detected");
+            if(_isActivator) ActivateAllOthers();
             if (_isLightSwitch) SwitchLights();
             if (_isDoorActivator && _door != null && !_door.NeedKey)
             {
@@ -42,6 +44,11 @@ public class PlayerDetector : MonoBehaviour
             }
 
 
+        }
+    }
+    private void ActivateAllOthers(){
+        foreach(GameObject go in _others){
+            go.SetActive(true);
         }
     }
     private void OnTriggerStay(Collider other)
